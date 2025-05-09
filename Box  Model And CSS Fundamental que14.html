@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Debugging Task</h1>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <p class="text">Fix my position!</p>
+</body>
+</html>
+Corrected CSS (styles.css):
+css
+Copy
+Edit
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+}
+
+/* Container for the boxes */
+.container {
+    display: flex; /* Aligns the boxes horizontally */
+    justify-content: space-between; /* Distributes the boxes with equal space */
+    padding: 20px; /* Adds padding around the container */
+}
+
+/* Styling for individual boxes */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 1px solid black;
+    display: flex; /* Centers content inside the box */
+    align-items: center; /* Vertically centers the text inside the box */
+    justify-content: center; /* Horizontally centers the text inside the box */
+}
+
+/* Styling for the text */
+.text {
+    position: relative; /* Fixes position relative to the document */
+    text-align: center;
+    margin-top: 20px; /* Adds some space between the text and the boxes */
+}
