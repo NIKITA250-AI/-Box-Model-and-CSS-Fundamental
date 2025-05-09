@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header and Fixed Footer</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        /* Main content styling */
+        main {
+            padding: 20px;
+            margin-bottom: 60px; /* Space for the fixed footer */
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        /* Fixed Footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Sticky Header
+</header>
+
+<main>
+    <p>This is the first paragraph. Scroll down to see the sticky header and fixed footer in action.</p>
+    <p>This is the second paragraph.</p>
+    <p>This is the third paragraph.</p>
+    <p>This is the fourth paragraph.</p>
+    <p>This is the fifth paragraph.</p>
+    <p>This is the sixth paragraph.</p>
+    <p>This is the seventh paragraph.</p>
+    <p>This is the eighth paragraph.</p>
+    <p>This is the ninth paragraph.</p>
+    <p>This is the tenth paragraph.</p>
+</main>
+
+<footer>
+    Fixed Footer
+</footer>
+
+</body>
+</html>
