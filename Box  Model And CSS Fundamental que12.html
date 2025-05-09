@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Display Properties Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>Mastering CSS Display Properties</h2>
+  <p>This page shows the differences between <strong>block</strong>, <strong>inline</strong>, <strong>inline-block</strong>, and <strong>none</strong> display types.</p>
+
+  <div id="block-element">I am a block element</div>
+  <span id="inline-element">I am an inline element</span>
+  <div id="inline-block-element">Inline-block box</div>
+  <div id="hidden-element">I am hidden by default</div>
+
+  <br><br>
+  <button onclick="toggleHidden()">Toggle Hidden Element</button>
+
+  <script>
+    function toggleHidden() {
+      const hiddenEl = document.getElementById('hidden-element');
+      hiddenEl.style.display = (hiddenEl.style.display === 'none') ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
